@@ -7,6 +7,8 @@ public class MonstroScript : MonoBehaviour
 
     public float speed;
     public float rotationSpeed;
+    public float damage;
+
 
     // Start is called before the first frame update
     void Start()
@@ -36,4 +38,14 @@ public class MonstroScript : MonoBehaviour
             transform.rotation = Quaternion.RotateTowards(transform.rotation, toRotation, rotationSpeed * Time.deltaTime);
         }
     }
+
+    //Causar Dano
+    void OnTriggerEnter(Collider other)
+    {
+        other.gameObject.GetComponent<VidaScript> ().TakeDamage (damage) ;
+    }
+
+    //Verificar Dano
+        //Criei esse print temporário pra verificar o dano enquanto naõ temos uma barra de vida. Tirar depois.
+ 
 }
