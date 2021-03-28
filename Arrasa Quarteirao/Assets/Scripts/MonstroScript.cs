@@ -40,12 +40,8 @@ public class MonstroScript : MonoBehaviour
     }
 
     //Causar Dano
-    void OnTriggerEnter(Collider other)
+    void OnCollisionEnter(Collision other)
     {
         other.gameObject.GetComponent<VidaScript> ().TakeDamage (damage) ;
     }
-
-    //Verificar Dano
-        //Criei esse print temporário pra verificar o dano enquanto naõ temos uma barra de vida. Tirar depois.
- 
 }
