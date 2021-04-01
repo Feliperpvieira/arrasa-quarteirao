@@ -2,24 +2,18 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class VidaScript : MonoBehaviour
+public class PrediosScript : MonoBehaviour
 {
-    // Start is called before the first frame update
-
     public float health;
     public float currentHealth;
     public bool alive = true;
+    public int bonusScore;
 
+    // Start is called before the first frame update
     void Start()
     {
         alive = true;
         currentHealth = health;
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-
     }
 
     public void TakeDamage(float damageIntensity)
@@ -34,9 +28,11 @@ public class VidaScript : MonoBehaviour
         if (currentHealth <= 0)
         {
             //Na linha 32 eu digo que mesmo que a vida bata um valor menor que zero, ela vai ser transformada em 0.
+            //Na linha 37 eu pego a variável score que existe no script do Monstro e adiciono o bônus.
             currentHealth = 0;
             alive = false;
-            gameObject.SetActive (false);
+            gameObject.SetActive(false);
+            MonstroScript.score = MonstroScript.score + bonusScore;
         }
     }
 }

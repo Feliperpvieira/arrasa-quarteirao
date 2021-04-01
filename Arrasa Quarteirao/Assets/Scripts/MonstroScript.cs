@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class MonstroScript : MonoBehaviour
 {
@@ -8,12 +9,13 @@ public class MonstroScript : MonoBehaviour
     public float speed;
     public float rotationSpeed;
     public float damage;
-
+    public static int score;
+    public Text scoreText;
 
     // Start is called before the first frame update
     void Start()
     {
-
+   
     }
 
     // Update is called once per frame
@@ -42,6 +44,13 @@ public class MonstroScript : MonoBehaviour
     //Causar Dano
     void OnCollisionEnter(Collision other)
     {
-        other.gameObject.GetComponent<VidaScript> ().TakeDamage (damage) ;
+        other.gameObject.GetComponent<PrediosScript> ().TakeDamage (damage) ;
+        AddScore();
+    }
+
+    void AddScore()
+    {
+        score++;
+        scoreText.text = "Pontuação: " + score.ToString();
     }
 }
