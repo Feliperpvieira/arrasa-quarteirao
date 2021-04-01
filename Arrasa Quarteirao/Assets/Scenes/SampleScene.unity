@@ -1058,6 +1058,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 6121729463617760233, guid: e396f517550cfc74e99d15b40fae8405,
+        type: 3}
+      propertyPath: bonusScore
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 8877270438639468928, guid: e396f517550cfc74e99d15b40fae8405,
         type: 3}
       propertyPath: m_RootOrder
@@ -1314,6 +1319,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 6121729463617760233, guid: e396f517550cfc74e99d15b40fae8405,
+        type: 3}
+      propertyPath: bonusScore
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 8877270438639468928, guid: e396f517550cfc74e99d15b40fae8405,
         type: 3}
       propertyPath: m_RootOrder
@@ -1595,7 +1605,6 @@ MonoBehaviour:
   speed: 10
   rotationSpeed: 750
   damage: 5
-  score: 0
   scoreText: {fileID: 1803716996}
 --- !u!54 &899644614
 Rigidbody:
@@ -2478,6 +2487,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 6121729463617760233, guid: e396f517550cfc74e99d15b40fae8405,
+        type: 3}
+      propertyPath: bonusScore
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 8877270438639468928, guid: e396f517550cfc74e99d15b40fae8405,
         type: 3}
       propertyPath: m_RootOrder
