@@ -12,10 +12,13 @@ public class CronometroScript : MonoBehaviour
 
     public Text countdownText;
 
+    public GameObject MenuMorte;
+    public GameObject Jogador;
+
     // Start is called before the first frame update
     void Start()
     {
-        
+        MenuMorte.SetActive(false); //Esconde a tela de morte no início das partidas
     }
 
     // Update is called once per frame
@@ -30,7 +33,14 @@ public class CronometroScript : MonoBehaviour
         if (totalTime <= 0)
         {
             totalTime = 0;
-            //gameObject.GetComponent<InimigoController>().FimDeJogo();
+            FimDeJogo();
         }
+    }
+
+    public void FimDeJogo()
+    {
+        //Debug.Log("Funcao fim de jogo chamada");
+        MenuMorte.SetActive(true);
+        Jogador.SetActive(false);
     }
 }
