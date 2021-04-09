@@ -7,6 +7,9 @@ public class InimigoController : MonoBehaviour {
 
     public float lookRadius = 10f;
 
+    public GameObject MenuMorte;
+    public GameObject Jogador;
+
     Transform target;
     NavMeshAgent agent;
 
@@ -14,6 +17,8 @@ public class InimigoController : MonoBehaviour {
     {
         target = MonstroManager.instance.player.transform;
         agent = GetComponent<NavMeshAgent>();
+
+        MenuMorte.SetActive(false); //Desativa o menu de morte no início de partidas
     }
 
     void Update()
@@ -31,6 +36,21 @@ public class InimigoController : MonoBehaviour {
     {
         Gizmos.color = Color.red; 
         Gizmos.DrawWireSphere(transform.position, lookRadius);
+    }
+
+    //Morrer ao encostar no inimigo
+    void OnCollisionEnter(Collision col)
+    {
+        if (col.gameObject.tag.Equals("Player")) 
+        {
+            FimDeJogo();
+        }
+    }
+
+    public void FimDeJogo()
+    {
+        MenuMorte.SetActive(true);
+        Jogador.SetActive(false);
     }
 
 }
