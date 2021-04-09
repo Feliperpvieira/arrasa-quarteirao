@@ -19,7 +19,7 @@ public class CronometroScript : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    public void Update()
     {
         totalTime -= 1 * Time.deltaTime;
         minutes = (int)(totalTime / 60);
@@ -30,6 +30,7 @@ public class CronometroScript : MonoBehaviour
         if (totalTime <= 0)
         {
             totalTime = 0;
+            //gameObject.GetComponent<InimigoController>().FimDeJogo();
         }
     }
 }
