@@ -7,8 +7,7 @@ public class InimigoController : MonoBehaviour {
 
     public float lookRadius = 10f;
 
-    public GameObject MenuMorte;
-    public GameObject Jogador;
+    public CronometroScript cronometroScript;
 
     Transform target;
     NavMeshAgent agent;
@@ -17,8 +16,6 @@ public class InimigoController : MonoBehaviour {
     {
         target = MonstroManager.instance.player.transform;
         agent = GetComponent<NavMeshAgent>();
-
-        MenuMorte.SetActive(false); //Desativa o menu de morte no início de partidas
     }
 
     void Update()
@@ -43,14 +40,10 @@ public class InimigoController : MonoBehaviour {
     {
         if (col.gameObject.tag.Equals("Player")) 
         {
-            FimDeJogo();
+            //Debug.Log("Morreu");
+            cronometroScript.FimDeJogo(); //Chama função de morte presente no cronometro script
+            
         }
-    }
-
-    public void FimDeJogo()
-    {
-        MenuMorte.SetActive(true);
-        Jogador.SetActive(false);
     }
 
 }
