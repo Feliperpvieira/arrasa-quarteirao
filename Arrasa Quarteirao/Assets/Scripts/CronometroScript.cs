@@ -42,5 +42,6 @@ public class CronometroScript : MonoBehaviour
         //Debug.Log("Funcao fim de jogo chamada");
         MenuMorte.SetActive(true);
         Jogador.SetActive(false);
+        enabled = false; //Faz o update parar de rodar, assim o temporizador para
     }
 }
