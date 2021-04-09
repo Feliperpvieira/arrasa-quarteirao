@@ -15,7 +15,7 @@ public class MonstroScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-   
+        score = 0; //Reseta a contagem no início de partidas
     }
 
     // Update is called once per frame
@@ -53,4 +53,5 @@ public class MonstroScript : MonoBehaviour
         score++;
         scoreText.text = "Pontuação: " + score.ToString();
     }
+
 }
