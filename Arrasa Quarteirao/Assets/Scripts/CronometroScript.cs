@@ -28,7 +28,7 @@ public class CronometroScript : MonoBehaviour
         minutes = (int)(totalTime / 60);
         seconds = (int)(totalTime % 60);
 
-        countdownText.text = minutes.ToString() + ":" + seconds.ToString();
+        countdownText.text = minutes.ToString() + ":" + seconds.ToString("00");
 
         if (totalTime <= 0)
         {
