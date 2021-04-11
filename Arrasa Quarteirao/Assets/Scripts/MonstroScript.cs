@@ -42,7 +42,7 @@ public class MonstroScript : MonoBehaviour
     }
 
     //Causar Dano
-    void OnCollisionEnter(Collision other)
+    void OnTriggerEnter(Collider other)
     {
         other.gameObject.GetComponent<PrediosScript> ().TakeDamage (damage) ;
         AddScore();

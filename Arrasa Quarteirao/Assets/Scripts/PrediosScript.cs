@@ -9,6 +9,9 @@ public class PrediosScript : MonoBehaviour
     public bool alive = true;
     public int bonusScore;
 
+    public GameObject inicialState;
+    public GameObject destroyed;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -33,6 +36,14 @@ public class PrediosScript : MonoBehaviour
             alive = false;
             gameObject.SetActive(false);
             MonstroScript.score = MonstroScript.score + bonusScore;
+            Replace(inicialState, destroyed);
         }
+    }
+    
+    //Trocar o estado do prédio de Inteiro pra Destruído
+
+    void Replace(GameObject state1, GameObject state2) {
+        Instantiate(state2, state1.transform.position, Quaternion.identity);
+        Destroy(state1);
     }
 }
