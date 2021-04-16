@@ -12,6 +12,8 @@ public class MonstroScript : MonoBehaviour
     public static int score;
     public Text scoreText;
 
+    public GameObject particulasColisao;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -45,6 +47,7 @@ public class MonstroScript : MonoBehaviour
     void OnTriggerEnter(Collider other)
     {
         other.gameObject.GetComponent<PrediosScript> ().TakeDamage (damage) ;
+        Instantiate(particulasColisao, transform.position, Quaternion.identity); //Inicia as particulas na colisão
         AddScore();
     }
 

@@ -41,7 +41,6 @@ public class PrediosScript : MonoBehaviour
     }
     
     //Trocar o estado do prédio de Inteiro pra Destruído
-
     void Replace(GameObject state1, GameObject state2) {
         Instantiate(state2, state1.transform.position, Quaternion.identity);
         Destroy(state1);

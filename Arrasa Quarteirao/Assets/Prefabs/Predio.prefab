@@ -120,10 +120,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fb5e0c2439cadf043896cb9f05c07511, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 50
+  health: 100
   currentHealth: 0
   alive: 1
   bonusScore: 20
   inicialState: {fileID: 3078652545569154550}
   destroyed: {fileID: 3078652545569154550, guid: 1eeebc1e2ae877543a9f9810a15dcc0e,
+    type: 3}
+  particulasColisao: {fileID: 2844262367946640963, guid: 6288b4136ea696e4caa8bc5c01015308,
     type: 3}
