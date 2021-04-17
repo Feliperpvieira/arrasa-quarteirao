@@ -38,22 +38,12 @@ public class CanvasFases : MonoBehaviour
         Time.timeScale = 0f;
         GameIsPaused = true;
     }
-    
-    
+
+
     public void restartScene()
     {
         SceneManager.LoadScene("SampleScene"); //Alterar nome entre aspas para mudar qual cena o botão de reiniciar vai carregar
         Time.timeScale = 1f;
-    }
-
-    public void botaoPause() //a ideia é passar essa e a debaixo pra outro arquivo, assim nao precisa ficar preenchendo os gameobjects desse arquivo toda vez que for aplicar um botao
-    {
-        Pause();
-    }
-
-    public void botaoResume()
-    {
-        Resume();
     }
 
 }
