@@ -14,6 +14,9 @@ public class MonstroScript : MonoBehaviour
 
     public GameObject particulasColisao;
 
+    float horizontal;
+    float vertical;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -26,9 +29,17 @@ public class MonstroScript : MonoBehaviour
     {
 
         //Movimetacao
-             //O "Raw" depois de GetAxis faz com que o personagem só mexa enquanto a tecla está pressionada
-        float horizontal = Input.GetAxisRaw("Horizontal");
-        float vertical = Input.GetAxisRaw("Vertical");
+        if (Input.touchCount > 0)
+        {
+            horizontal = JoystickController.joystickInput.x;
+            vertical = JoystickController.joystickInput.y;
+        }
+        else
+        {
+            horizontal = Input.GetAxisRaw("Horizontal"); //O "Raw" depois de GetAxis faz com que o personagem só mexa enquanto a tecla está pressionada
+            vertical = Input.GetAxisRaw("Vertical");
+        }
+            
 
         Vector3 movementDirection = new Vector3(horizontal, 0, vertical);
         movementDirection.Normalize();
