@@ -42,7 +42,7 @@ public class CanvasFases : MonoBehaviour
 
     public void restartScene()
     {
-        SceneManager.LoadScene("SampleScene"); //Alterar nome entre aspas para mudar qual cena o botão de reiniciar vai carregar
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);   //Entre parenteses ta o código que pega o nome da fase atual, para sempre reiniciar a fase que o jogador esta
         Time.timeScale = 1f;
     }
 
