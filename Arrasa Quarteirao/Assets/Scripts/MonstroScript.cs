@@ -9,8 +9,7 @@ public class MonstroScript : MonoBehaviour
     public float speed;
     public float rotationSpeed;
     public float damage;
-    public static int score;
-    public Text scoreText;
+    
 
     public GameObject particulasColisao;
 
@@ -18,11 +17,7 @@ public class MonstroScript : MonoBehaviour
     float vertical;
 
     // Start is called before the first frame update
-    void Start()
-    {
-        score = 0; //Reseta a contagem no início de partidas
-    }
-
+    
     // Update is called once per frame
 
     void Update()
@@ -59,13 +54,7 @@ public class MonstroScript : MonoBehaviour
     {
         other.gameObject.GetComponent<PrediosScript> ().TakeDamage (damage) ;
         Instantiate(particulasColisao, transform.position, Quaternion.identity); //Inicia as particulas na colisão
-        AddScore();
-    }
-
-    void AddScore()
-    {
-        score++;
-        scoreText.text = "Pontuação: " + score.ToString();
+        Pontuacao.score += 1;
     }
 
 }

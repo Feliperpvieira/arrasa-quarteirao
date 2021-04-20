@@ -35,7 +35,7 @@ public class PrediosScript : MonoBehaviour
             currentHealth = 0;
             alive = false;
             gameObject.SetActive(false);
-            MonstroScript.score = MonstroScript.score + bonusScore;
+            Pontuacao.score = Pontuacao.score + bonusScore;
             Replace(inicialState, destroyed);
         }
     }
