@@ -5,21 +5,19 @@ using UnityEngine.UI;
 
 public class MonstroScript : MonoBehaviour
 {
-
+    [Header("Monstro specs")]
     public float speed;
     public float rotationSpeed;
     public float damage;
-    
 
+    [Header("Partículas ao colidir")]
     public GameObject particulasColisao;
 
+    //Variaveis usadas na Movimentacao
     float horizontal;
     float vertical;
 
-    // Start is called before the first frame update
-    
     // Update is called once per frame
-
     void Update()
     {
 
@@ -53,7 +51,7 @@ public class MonstroScript : MonoBehaviour
     void OnTriggerEnter(Collider other)
     {
         other.gameObject.GetComponent<PrediosScript> ().TakeDamage (damage) ;
-        Instantiate(particulasColisao, transform.position, Quaternion.identity); //Inicia as particulas na colisão
+        Instantiate(particulasColisao, transform.position, Quaternion.identity); //Inicia as particulas na colisão, elas sao destruidas no script DestroyParticulas
         Pontuacao.score += 1;
     }
 
