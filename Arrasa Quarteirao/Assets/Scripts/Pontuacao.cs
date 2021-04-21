@@ -13,7 +13,7 @@ public class Pontuacao : MonoBehaviour
     void Start()
     {
         score = 0; //Reseta a contagem no início de partidas
-        scoreVitoriaStatic = scoreVitoria; //não é o ideal mas nao achei nada simples que funcionasse
+        scoreVitoriaStatic = scoreVitoria; //não é o ideal mas nao achei nada simples que funcionasse, pois precisa ser static pra acessar em outros arquivos mas static nao pode ser alterado no Unity
     }
 
     public void Update()

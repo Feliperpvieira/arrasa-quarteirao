@@ -5,32 +5,35 @@ using UnityEngine.UI;
 
 public class CronometroScript : MonoBehaviour
 {
-    public float totalTime;
-    float TimeDuasEstrelas;
+    [Header("Tempo da fase")]
+    public float totalTime; //tempo total da fase
+    float TimeDuasEstrelas; 
     float TimeTresEstrelas;
-    float current;
+    float maximum;
 
+    [Header("Estrelas e Barra de Progresso")]
     public GameObject EstrelaUm;
     public GameObject EstrelaDois;
     public GameObject EstrelaTres;
     public Image barraProgresso;
+    static int QuantidadeEstrelas = 3;
 
     private float minutes;
     private float seconds;
 
     public Text countdownText;
 
+    [Header("Menus e jogador")]
     public GameObject MenuMorte;
     public GameObject MenuVitoria;
     public GameObject Jogador;
 
-    // Start is called before the first frame update
+    // Define os tempos para cada estrela na fase
     void Start()
     {
-        MenuMorte.SetActive(false); //Esconde a tela de morte no início das partidas
-        current = totalTime;
-        TimeTresEstrelas = totalTime - ((totalTime * 60) / 100);
-        TimeDuasEstrelas = totalTime - ((totalTime * 85) / 100);
+        maximum = totalTime; // Iguala o maximum (usado na barra de progresso) ao tempo total, mantendo apenas 1 variavel a ser definida no Unity
+        TimeTresEstrelas = totalTime - ((totalTime * 60) / 100); //Calcula o tempo que tem para ganhar 3 estrelas (60%)
+        TimeDuasEstrelas = totalTime - ((totalTime * 85) / 100); //Calcula o tempo que tem para ganhar 2 estrelas (85%)
     }
 
     // Update is called once per frame
@@ -51,13 +54,16 @@ public class CronometroScript : MonoBehaviour
             FimDeJogo();
         }
 
+        //if's para esconder as estrelas amarelas quando o tempo passa
         if(totalTime <= TimeTresEstrelas)
         {
             EstrelaTres.SetActive(false);
+            QuantidadeEstrelas = 2;
         }
         if (totalTime <= TimeDuasEstrelas)
         {
             EstrelaDois.SetActive(false);
+            QuantidadeEstrelas = 1;
         }
 
         if (Pontuacao.score >= Pontuacao.scoreVitoriaStatic)
@@ -80,9 +86,9 @@ public class CronometroScript : MonoBehaviour
         Time.timeScale = 0f;
     }
 
-    void GetCurrentFill()
+    void GetCurrentFill() // Funcao que faz passar o tempo na barra de progresso, ao lado do cronometro
     {
-        float fillAmount = (float)totalTime / (float)current;
+        float fillAmount = (float)totalTime / (float)maximum;
         barraProgresso.fillAmount = fillAmount;
     }
 }
