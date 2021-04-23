@@ -12,25 +12,25 @@ public class CronometroScript : MonoBehaviour
     float maximum;
 
     [Header("Estrelas e Barra de Progresso")]
-    public GameObject EstrelaUm;
-    public GameObject EstrelaDois;
-    public GameObject EstrelaTres;
+    public GameObject[] estrelasProgresso;
     public Image barraProgresso;
     static int QuantidadeEstrelas = 3;
+    public GameObject[] estrelasVitoria;
+
+    [Header("Menus e jogador")]
+    public Text countdownText;
+    public GameObject MenuMorte;
+    public GameObject MenuVitoria;
+    public GameObject botaoPausa;
+    public GameObject Jogador;
 
     private float minutes;
     private float seconds;
 
-    public Text countdownText;
-
-    [Header("Menus e jogador")]
-    public GameObject MenuMorte;
-    public GameObject MenuVitoria;
-    public GameObject Jogador;
-
     // Define os tempos para cada estrela na fase
     void Start()
     {
+        Time.timeScale = 1f;
         maximum = totalTime; // Iguala o maximum (usado na barra de progresso) ao tempo total, mantendo apenas 1 variavel a ser definida no Unity
         TimeTresEstrelas = totalTime - ((totalTime * 60) / 100); //Calcula o tempo que tem para ganhar 3 estrelas (60%)
         TimeDuasEstrelas = totalTime - ((totalTime * 85) / 100); //Calcula o tempo que tem para ganhar 2 estrelas (85%)
@@ -50,19 +50,23 @@ public class CronometroScript : MonoBehaviour
         if (totalTime <= 0)
         {
             totalTime = 0;
-            EstrelaUm.SetActive(false);
+            estrelasProgresso[0].SetActive(false);
+            estrelasVitoria[0].SetActive(false);
             FimDeJogo();
         }
 
         //if's para esconder as estrelas amarelas quando o tempo passa
         if(totalTime <= TimeTresEstrelas)
         {
-            EstrelaTres.SetActive(false);
+            estrelasProgresso[2].SetActive(false);
+            estrelasVitoria[2].SetActive(false);
+
             QuantidadeEstrelas = 2;
         }
         if (totalTime <= TimeDuasEstrelas)
         {
-            EstrelaDois.SetActive(false);
+            estrelasProgresso[1].SetActive(false);
+            estrelasVitoria[1].SetActive(false);
             QuantidadeEstrelas = 1;
         }
 
@@ -77,12 +81,14 @@ public class CronometroScript : MonoBehaviour
         //Debug.Log("Funcao fim de jogo chamada");
         MenuMorte.SetActive(true);
         Jogador.SetActive(false);
+        botaoPausa.SetActive(false);
         Time.timeScale = 0f;
     }
 
     public void Vitoria()
     {
         MenuVitoria.SetActive(true);
+        botaoPausa.SetActive(false);
         Time.timeScale = 0f;
     }
 

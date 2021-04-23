@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 public class CanvasFases : MonoBehaviour
 {
     public static bool GameIsPaused = false;
+    [Header("Elementos da tela")]
     public GameObject pauseBotao;
     public GameObject pauseMenuUI;
 
