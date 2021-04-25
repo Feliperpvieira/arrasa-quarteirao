@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 3078652545569154549}
   - component: {fileID: 3337268199143618254}
   - component: {fileID: 396093293925257123}
+  - component: {fileID: 8570108785770049371}
   m_Layer: 0
   m_Name: Predio
   m_TagString: Untagged
@@ -106,8 +107,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.25, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0.5}
+  m_Size: {x: 2, y: 1, z: 0.25}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &396093293925257123
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -127,3 +128,16 @@ MonoBehaviour:
   inicialState: {fileID: 3078652545569154550}
   destroyed: {fileID: 3078652545569154550, guid: 1eeebc1e2ae877543a9f9810a15dcc0e,
     type: 3}
+--- !u!65 &8570108785770049371
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3078652545569154550}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.25, y: 1, z: 2}
+  m_Center: {x: 0, y: 0, z: 0}
