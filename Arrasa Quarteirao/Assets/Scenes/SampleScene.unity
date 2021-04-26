@@ -12125,7 +12125,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 22e12ac17742f7e41988d993c2d77d19, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  totalTime: 120
+  totalTime: 110
   estrelasProgresso:
   - {fileID: 172687781}
   - {fileID: 41808921}
