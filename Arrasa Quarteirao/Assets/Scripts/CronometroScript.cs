@@ -90,6 +90,9 @@ public class CronometroScript : MonoBehaviour
         MenuVitoria.SetActive(true);
         botaoPausa.SetActive(false);
         Time.timeScale = 0f;
+        MenuInicial.totalEstrelas = MenuInicial.totalEstrelas + QuantidadeEstrelas;
+        //Debug.Log("Pontuacao chamada " + MenuInicial.totalEstrelas);
+        enabled = false;
     }
 
     void GetCurrentFill() // Funcao que faz passar o tempo na barra de progresso, ao lado do cronometro

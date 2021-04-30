@@ -47,4 +47,9 @@ public class CanvasFases : MonoBehaviour
         Time.timeScale = 1f;
     }
 
+    public void backToMenu()
+    {
+        SceneManager.LoadScene("Menu");
+    }
+
 }
