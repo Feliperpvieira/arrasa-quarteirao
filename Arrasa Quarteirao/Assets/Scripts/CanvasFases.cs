@@ -49,7 +49,7 @@ public class CanvasFases : MonoBehaviour
 
     public void backToMenu()
     {
-        SceneManager.LoadScene("Menu");
+        SceneManager.LoadScene("LevelSelect");
     }
 
 }

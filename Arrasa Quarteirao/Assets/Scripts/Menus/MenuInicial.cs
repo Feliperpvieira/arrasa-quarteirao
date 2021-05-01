@@ -24,6 +24,11 @@ public class MenuInicial : MonoBehaviour
 
     public void JogarBotao()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        SceneManager.LoadScene("LevelSelect");
+    }
+
+    public void QuitGame()
+    {
+        Application.Quit();
     }
 }
