@@ -1,7 +1,9 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+
 
 public class CronometroScript : MonoBehaviour
 {
@@ -92,6 +94,12 @@ public class CronometroScript : MonoBehaviour
         Time.timeScale = 0f;
         MenuInicial.totalEstrelas = MenuInicial.totalEstrelas + QuantidadeEstrelas;
         //Debug.Log("Pontuacao chamada " + MenuInicial.totalEstrelas);
+
+        if (QuantidadeEstrelas > PlayerPrefs.GetInt(SceneManager.GetActiveScene().name, 0))
+        {
+            PlayerPrefs.SetInt(SceneManager.GetActiveScene().name, QuantidadeEstrelas);
+        }
+
         enabled = false;
     }
 

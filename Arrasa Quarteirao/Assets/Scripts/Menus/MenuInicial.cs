@@ -19,7 +19,7 @@ public class MenuInicial : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        totalEstrelasText.text = "Total de estrelas: " + totalEstrelas.ToString();
+        totalEstrelasText.text = "Fase 0: " + PlayerPrefs.GetInt("0", 0).ToString() + ", Fase 1: " + PlayerPrefs.GetInt("1", 0).ToString() + ", Fase 2: " + PlayerPrefs.GetInt("2", 0).ToString() + ", Fase 3: " + PlayerPrefs.GetInt("3", 0).ToString() + ", Fase 4: " + ", Fase SS: " + PlayerPrefs.GetInt("SampleScene", 0).ToString();
     }
 
     public void JogarBotao()
