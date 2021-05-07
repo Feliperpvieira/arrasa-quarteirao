@@ -31,4 +31,9 @@ public class MenuInicial : MonoBehaviour
     {
         Application.Quit();
     }
+
+    public void ResetSave()
+    {
+        PlayerPrefs.DeleteAll();
+    }
 }
