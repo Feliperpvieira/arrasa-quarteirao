@@ -16,7 +16,7 @@ public class CronometroScript : MonoBehaviour
     [Header("Estrelas e Barra de Progresso")]
     public GameObject[] estrelasProgresso;
     public Image barraProgresso;
-    static int QuantidadeEstrelas = 3;
+    static int QuantidadeEstrelas;
     public GameObject[] estrelasVitoria;
 
     [Header("Menus e jogador")]
@@ -33,6 +33,7 @@ public class CronometroScript : MonoBehaviour
     void Start()
     {
         Time.timeScale = 1f;
+        QuantidadeEstrelas = 3;
         maximum = totalTime; // Iguala o maximum (usado na barra de progresso) ao tempo total, mantendo apenas 1 variavel a ser definida no Unity
         TimeTresEstrelas = totalTime - ((totalTime * 60) / 100); //Calcula o tempo que tem para ganhar 3 estrelas (60%)
         TimeDuasEstrelas = totalTime - ((totalTime * 85) / 100); //Calcula o tempo que tem para ganhar 2 estrelas (85%)

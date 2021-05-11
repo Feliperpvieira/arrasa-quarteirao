@@ -12,6 +12,10 @@ public class PrediosScript : MonoBehaviour
     public GameObject inicialState;
     public GameObject destroyed;
 
+    [Header("Partículas emitidias")]
+    public GameObject particulasColisao;
+    public GameObject particulasDestruicao;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -22,6 +26,7 @@ public class PrediosScript : MonoBehaviour
     public void TakeDamage(float damageIntensity)
     {
         currentHealth -= damageIntensity;
+        Instantiate(particulasColisao, transform.position, Quaternion.identity);
 
         if (!alive) //Checa se o prédio está vivo. Se não, nada acontece. A exclamação antes de alive significa "se não está alive".
         {
@@ -36,13 +41,14 @@ public class PrediosScript : MonoBehaviour
             alive = false;
             gameObject.SetActive(false);
             Pontuacao.score = Pontuacao.score + bonusScore;
+            Instantiate(particulasDestruicao, transform.position, Quaternion.identity);
             Replace(inicialState, destroyed);
         }
     }
     
     //Trocar o estado do prédio de Inteiro pra Destruído
     void Replace(GameObject state1, GameObject state2) {
-        Instantiate(state2, state1.transform.position, Quaternion.identity);
+        Instantiate(state2, state1.transform.position, state1.transform.rotation); //pega a posição e rotação do prédio anterior e replica no novo
         Destroy(state1);
     }
 }

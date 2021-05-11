@@ -10,8 +10,8 @@ public class MonstroScript : MonoBehaviour
     public float rotationSpeed;
     public float damage;
 
-    [Header("Partículas ao colidir")]
-    public GameObject particulasColisao;
+    /*[Header("Partículas ao colidir")]
+    public GameObject particulasColisao;*/ //Deixei o codigo das particulas aqui pra poder adicionar depois uma fumaça ou algo quando o monstro morrer pra dar um [[chef kiss]]
 
     //Variaveis usadas na Movimentacao
     float horizontal;
@@ -51,7 +51,7 @@ public class MonstroScript : MonoBehaviour
     void OnTriggerEnter(Collider other)
     {
         other.gameObject.GetComponent<PrediosScript> ().TakeDamage (damage) ;
-        Instantiate(particulasColisao, transform.position, Quaternion.identity); //Inicia as particulas na colisão, elas sao destruidas no script DestroyParticulas
+        //Instantiate(particulasColisao, transform.position, Quaternion.identity); //Inicia as particulas na colisão
         Pontuacao.score += 1;
     }
 
