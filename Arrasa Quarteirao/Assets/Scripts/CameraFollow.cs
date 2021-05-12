@@ -20,9 +20,21 @@ public class CameraFollow : MonoBehaviour
     // Update is called once per frame
     void LateUpdate()
     {
-        Vector3 newPos = PlayerTransform.position + _cameraOffset;
 
-        transform.position = Vector3.Slerp(transform.position, newPos, SmoothFactor);
+        Vector3 pos = PlayerTransform.position + _cameraOffset;
+
+        pos.z = Mathf.Clamp(pos.z, -1f, 6f);
+        //Debug.Log(pos.z);
+
+        pos.x = Mathf.Clamp(pos.x, 2.7f, 2.7f);
+
+        transform.position = pos;
+
+
+
+        //Vector3 newPos = PlayerTransform.position + _cameraOffset;
+
+        //transform.position = Vector3.Slerp(transform.position, newPos, SmoothFactor);
 
     }
 }
