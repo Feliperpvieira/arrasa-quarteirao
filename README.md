@@ -10,7 +10,7 @@ ATENÇÃO: Em ambos os testes jogar a fase **SS**. As outras fases NÃO FUNCIONA
 [Teste 3](https://feliperpv.me/arrasa_quarteirao/teste3)\
 Jogo com a câmera movimentando apenas no eixo z.
 
-**Testes antigos**
+**Testes antigos:**\
 [Teste 1](https://feliperpv.me/arrasa_quarteirao/teste1)\
 Jogo com a câmera estática, exibindo o mapa completo.
 
