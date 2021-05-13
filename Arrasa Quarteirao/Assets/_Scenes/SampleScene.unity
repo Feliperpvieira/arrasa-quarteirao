@@ -1237,6 +1237,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1598862100}
     m_Modifications:
+    - target: {fileID: 4703080782826331773, guid: 554715b2a3709ef428ba07a6387f0a3c,
+        type: 3}
+      propertyPath: bonusQuarteiraoScore
+      value: 60
+      objectReference: {fileID: 0}
     - target: {fileID: 7123933107957845379, guid: 554715b2a3709ef428ba07a6387f0a3c,
         type: 3}
       propertyPath: m_RootOrder
@@ -2046,7 +2051,7 @@ PrefabInstance:
     - target: {fileID: 4703080782826331773, guid: 554715b2a3709ef428ba07a6387f0a3c,
         type: 3}
       propertyPath: bonusQuarteiraoScore
-      value: 50
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 7123933107957845379, guid: 554715b2a3709ef428ba07a6387f0a3c,
         type: 3}
@@ -2618,6 +2623,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1598862100}
     m_Modifications:
+    - target: {fileID: 4703080782826331773, guid: 554715b2a3709ef428ba07a6387f0a3c,
+        type: 3}
+      propertyPath: bonusQuarteiraoScore
+      value: 60
+      objectReference: {fileID: 0}
     - target: {fileID: 7123933107957845379, guid: 554715b2a3709ef428ba07a6387f0a3c,
         type: 3}
       propertyPath: m_RootOrder
@@ -4391,6 +4401,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1598862100}
     m_Modifications:
+    - target: {fileID: 4703080782826331773, guid: 554715b2a3709ef428ba07a6387f0a3c,
+        type: 3}
+      propertyPath: bonusQuarteiraoScore
+      value: 60
+      objectReference: {fileID: 0}
     - target: {fileID: 7123933107957845379, guid: 554715b2a3709ef428ba07a6387f0a3c,
         type: 3}
       propertyPath: m_RootOrder
@@ -7952,6 +7967,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1598862100}
     m_Modifications:
+    - target: {fileID: 4703080782826331773, guid: 554715b2a3709ef428ba07a6387f0a3c,
+        type: 3}
+      propertyPath: bonusQuarteiraoScore
+      value: 35
+      objectReference: {fileID: 0}
     - target: {fileID: 7123933107957845379, guid: 554715b2a3709ef428ba07a6387f0a3c,
         type: 3}
       propertyPath: m_RootOrder
@@ -9577,7 +9597,7 @@ PrefabInstance:
     - target: {fileID: 7695145245258761136, guid: 2fd65eff7faefc4448b42845f6806f33,
         type: 3}
       propertyPath: scoreVitoria
-      value: 700
+      value: 800
       objectReference: {fileID: 0}
     - target: {fileID: 7695145245258761138, guid: 2fd65eff7faefc4448b42845f6806f33,
         type: 3}
@@ -9587,7 +9607,7 @@ PrefabInstance:
     - target: {fileID: 7695145245258761138, guid: 2fd65eff7faefc4448b42845f6806f33,
         type: 3}
       propertyPath: totalTime
-      value: 100
+      value: 110
       objectReference: {fileID: 0}
     - target: {fileID: 7695145245258761139, guid: 2fd65eff7faefc4448b42845f6806f33,
         type: 3}
