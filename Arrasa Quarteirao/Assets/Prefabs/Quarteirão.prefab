@@ -106,6 +106,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 154a300710fa1fc4ba3d0875d1ad28ca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bonusQuarteiraoScore: 40
-  particulasDestruicao: {fileID: 2844262367946640963, guid: a1a1452832663d54bbb98b638a2b1fcf,
+  bonusQuarteiraoScore: 50
+  txtBonusPrefab: {fileID: 7614076650050460722, guid: 14e77a088b0c3d545aed54f4598360bd,
     type: 3}
