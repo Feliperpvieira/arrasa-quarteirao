@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 7123933107957845378}
   - component: {fileID: 7123933107957845381}
   - component: {fileID: 7123933107957845380}
+  - component: {fileID: 4703080782826331773}
   m_Layer: 0
   m_Name: "Quarteir\xE3o"
   m_TagString: Untagged
@@ -93,3 +94,18 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 5, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &4703080782826331773
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7123933107957845383}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 154a300710fa1fc4ba3d0875d1ad28ca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bonusQuarteiraoScore: 40
+  particulasDestruicao: {fileID: 2844262367946640963, guid: a1a1452832663d54bbb98b638a2b1fcf,
+    type: 3}
