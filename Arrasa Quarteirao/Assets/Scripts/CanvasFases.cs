@@ -19,7 +19,10 @@ public class CanvasFases : MonoBehaviour
             }
             else
             {
-                Pause();
+               if (Time.timeScale != 0f) //Não é bonito mas foi o jeito mais fácil de impedir que o menu de pausa seja acionado pela tecla ESC nas telas de vitória/derrota, pois (atualmente) elas deixam o timescale = 0f
+               {
+                 Pause();
+               }    
             }
         }
     }
