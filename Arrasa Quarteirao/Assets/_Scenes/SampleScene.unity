@@ -9689,6 +9689,37 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 940892947848150403, guid: 2fd65eff7faefc4448b42845f6806f33,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+    - target: {fileID: 3069887918411651503, guid: 2fd65eff7faefc4448b42845f6806f33,
+        type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee,
+        type: 2}
+    - target: {fileID: 3069887918411651503, guid: 2fd65eff7faefc4448b42845f6806f33,
+        type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+    - target: {fileID: 5575707981952336049, guid: 2fd65eff7faefc4448b42845f6806f33,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -0.59996796
+      objectReference: {fileID: 0}
+    - target: {fileID: 7695145243449288712, guid: 2fd65eff7faefc4448b42845f6806f33,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 1.4000244
+      objectReference: {fileID: 0}
+    - target: {fileID: 7695145243582287897, guid: 2fd65eff7faefc4448b42845f6806f33,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -0.000045776367
+      objectReference: {fileID: 0}
     - target: {fileID: 7695145245258761136, guid: 2fd65eff7faefc4448b42845f6806f33,
         type: 3}
       propertyPath: scoreVitoria
