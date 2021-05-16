@@ -8,7 +8,8 @@ public class Pontuacao : MonoBehaviour
     public static int score;
     public int scoreVitoria;
     public static int scoreVitoriaStatic;
-    public Text scoreText;
+    public Text scoreText; //Pontuacao do jogador
+    public Text scoreVitoriaText; //Pontuacao para vencer a fase
 
     void Start()
     {
@@ -18,7 +19,8 @@ public class Pontuacao : MonoBehaviour
 
     public void Update()
     {
-        scoreText.text = score.ToString() + "/" + scoreVitoria.ToString();
+        scoreText.text = score.ToString();
+        scoreVitoriaText.text = "/" + scoreVitoria.ToString();
     }
 
     void Replace(GameObject state1, GameObject state2)
