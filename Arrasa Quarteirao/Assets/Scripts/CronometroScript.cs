@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using TMPro;
 
 
 public class CronometroScript : MonoBehaviour
@@ -20,7 +21,7 @@ public class CronometroScript : MonoBehaviour
     public GameObject[] estrelasVitoria;
 
     [Header("Menus e jogador")]
-    public Text countdownText;
+    public TMP_Text countdownText;
     public GameObject MenuMorte;
     public GameObject MenuVitoria;
     public GameObject botaoPausa;

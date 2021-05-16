@@ -2,14 +2,16 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
+
 
 public class Pontuacao : MonoBehaviour
 {
     public static int score;
     public int scoreVitoria;
     public static int scoreVitoriaStatic;
-    public Text scoreText; //Pontuacao do jogador
-    public Text scoreVitoriaText; //Pontuacao para vencer a fase
+    public TMP_Text scoreText; //Pontuacao do jogador
+    public TMP_Text scoreVitoriaText; //Pontuacao para vencer a fase
 
     void Start()
     {
