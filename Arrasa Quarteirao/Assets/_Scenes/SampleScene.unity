@@ -9720,6 +9720,21 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.x
       value: -0.000045776367
       objectReference: {fileID: 0}
+    - target: {fileID: 7695145244178767964, guid: 2fd65eff7faefc4448b42845f6806f33,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7695145244736129814, guid: 2fd65eff7faefc4448b42845f6806f33,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7695145245149141860, guid: 2fd65eff7faefc4448b42845f6806f33,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7695145245258761136, guid: 2fd65eff7faefc4448b42845f6806f33,
         type: 3}
       propertyPath: scoreVitoria
