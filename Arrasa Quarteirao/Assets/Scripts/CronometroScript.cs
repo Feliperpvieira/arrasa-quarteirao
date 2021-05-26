@@ -8,6 +8,9 @@ using TMPro;
 
 public class CronometroScript : MonoBehaviour
 {
+    [Header("Dados para salvar as estrelas")]
+    public string estrelasNomeMundoFase;
+
     [Header("Tempo da fase")]
     public float totalTime; //tempo total da fase
     float TimeDuasEstrelas; 
@@ -94,12 +97,17 @@ public class CronometroScript : MonoBehaviour
         MenuVitoria.SetActive(true);
         botaoPausa.SetActive(false);
         Time.timeScale = 0f;
-        MenuInicial.totalEstrelas = MenuInicial.totalEstrelas + QuantidadeEstrelas;
-        //Debug.Log("Pontuacao chamada " + MenuInicial.totalEstrelas);
 
-        if (QuantidadeEstrelas > PlayerPrefs.GetInt(SceneManager.GetActiveScene().name, 0))
+        if (PlayerPrefs.GetInt(estrelasNomeMundoFase) == 0) //Faz o passar de nível no levelSelect script
         {
-            PlayerPrefs.SetInt(SceneManager.GetActiveScene().name, QuantidadeEstrelas);
+            int atual = PlayerPrefs.GetInt("levelAtual");
+            atual = atual + 1;
+            PlayerPrefs.SetInt("levelAtual", atual);
+        }
+
+        if (QuantidadeEstrelas > PlayerPrefs.GetInt(estrelasNomeMundoFase))
+        {
+            PlayerPrefs.SetInt(estrelasNomeMundoFase, QuantidadeEstrelas);
         }
 
         enabled = false;
