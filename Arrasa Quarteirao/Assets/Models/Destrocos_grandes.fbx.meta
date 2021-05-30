@@ -1,29 +1,9 @@
 fileFormatVersion: 2
-guid: 7c8da8cb9fe24dc43ad2523c99fc8bf1
+guid: 24ffc720f3e644cb8ad6fc7b560364e2
 ModelImporter:
   serializedVersion: 19301
   internalIDToNameTable: []
-  externalObjects:
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Concreto
-    second: {fileID: 2100000, guid: 32dc15deb567149d1a9f4cb0d46d1e05, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: FachadaPredio
-    second: {fileID: 2100000, guid: 8185e1131caef473f87019e0e50ef6a8, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Metal
-    second: {fileID: 2100000, guid: bb3d2893ef45e4a9f935cf2ba70e34ee, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Vidro
-    second: {fileID: 2100000, guid: 22de9cd38d7c64244b16362adc0b28ae, type: 2}
+  externalObjects: {}
   materials:
     materialImportMode: 1
     materialName: 0
