@@ -1,34 +1,9 @@
 fileFormatVersion: 2
-guid: 7ba9b181694444d8a95d3c51d7afe61b
+guid: aba23ae14377644c7841942717fada17
 ModelImporter:
   serializedVersion: 19301
   internalIDToNameTable: []
-  externalObjects:
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Concreto
-    second: {fileID: 2100000, guid: f1f2061991e894c10940d6cb6215ebb8, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Grama
-    second: {fileID: 2100000, guid: 8dadc3515bd2d4e8bada9e254010e01f, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Madeira
-    second: {fileID: 2100000, guid: 51194bc381d1140ceb59959d93676be9, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Telhado
-    second: {fileID: 2100000, guid: fe54ec4aa789b4677b7d3817975b401c, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Vidro
-    second: {fileID: 2100000, guid: 3d297e9f331594941b6fe2087b093a8c, type: 2}
+  externalObjects: {}
   materials:
     materialImportMode: 1
     materialName: 0
