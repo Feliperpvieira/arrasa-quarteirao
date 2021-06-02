@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!21 &-4655816559494645701
+--- !u!21 &-8733433780964135978
 Material:
   serializedVersion: 6
   m_ObjectHideFlags: 0
@@ -32,7 +32,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
-        m_Texture: {fileID: 5108811433124403953}
+        m_Texture: {fileID: 1838795062622568554}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _OutlineTex:
@@ -94,10 +94,10 @@ Material:
     m_Colors:
     - _ClipRect: {r: -32767, g: -32767, b: 32767, a: 32767}
     - _EnvMatrixRotation: {r: 0, g: 0, b: 0, a: 0}
-    - _FaceColor: {r: 1, g: 1, b: 1, a: 1}
+    - _FaceColor: {r: 0, g: 0.7764706, b: 1, a: 1}
     - _GlowColor: {r: 0, g: 1, b: 0, a: 0.5}
     - _MaskCoord: {r: 0, g: 0, b: 32767, a: 32767}
-    - _OutlineColor: {r: 0.16470589, g: 0.36078432, b: 0.47843137, a: 1}
+    - _OutlineColor: {r: 1, g: 1, b: 1, a: 1}
     - _ReflectFaceColor: {r: 0, g: 0, b: 0, a: 1}
     - _ReflectOutlineColor: {r: 0, g: 0, b: 0, a: 1}
     - _SpecularColor: {r: 1, g: 1, b: 1, a: 1}
@@ -112,11 +112,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 71c1514a6bd24e1e882cebbe1904ce04, type: 3}
-  m_Name: JockeyOne-Regular SDF 1
+  m_Name: JockeyOne-Regular SDF
   m_EditorClassIdentifier: 
-  hashCode: 1516530050
-  material: {fileID: -4655816559494645701}
-  materialHashCode: 2040831202
+  hashCode: 1220074771
+  material: {fileID: -8733433780964135978}
+  materialHashCode: -1733652781
   m_Version: 1.1.0
   m_SourceFontFileGUID: 77aaffafe1ac42a44ac273aa8de0210a
   m_SourceFontFile_EditorRef: {fileID: 12800000, guid: 77aaffafe1ac42a44ac273aa8de0210a,
@@ -1893,7 +1893,7 @@ MonoBehaviour:
     m_GlyphIndex: 356
     m_Scale: 1
   m_AtlasTextures:
-  - {fileID: 5108811433124403953}
+  - {fileID: 1838795062622568554}
   m_AtlasTextureIndex: 0
   m_IsMultiAtlasTexturesEnabled: 0
   m_ClearDynamicDataOnBuild: 0
@@ -2568,7 +2568,7 @@ MonoBehaviour:
     atlasHeight: 512
     characterSetSelectionMode: 0
     characterSequence: 32 - 126, 160, 8203, 8230, 9633
-    referencedFontAssetGUID: 85f398a9f6c2df748a17f7c7207dbe10
+    referencedFontAssetGUID: 
     referencedTextAssetGUID: 
     fontStyle: 0
     fontStyleModifier: 0
@@ -2602,13 +2602,13 @@ MonoBehaviour:
   boldSpacing: 7
   italicStyle: 35
   tabSize: 10
---- !u!28 &5108811433124403953
+--- !u!28 &1838795062622568554
 Texture2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: JockeyOne-Regular SDF 1 Atlas
+  m_Name: JockeyOne-Regular SDF Atlas
   m_ImageContentsHash:
     serializedVersion: 2
     Hash: 00000000000000000000000000000000
@@ -2620,7 +2620,7 @@ Texture2D:
   m_CompleteImageSize: 262144
   m_TextureFormat: 1
   m_MipCount: 1
-  m_IsReadable: 0
+  m_IsReadable: 1
   m_IgnoreMasterTextureLimit: 0
   m_IsPreProcessed: 0
   m_StreamingMipmaps: 0
