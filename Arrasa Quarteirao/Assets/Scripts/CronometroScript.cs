@@ -39,8 +39,8 @@ public class CronometroScript : MonoBehaviour
         Time.timeScale = 1f;
         QuantidadeEstrelas = 3;
         maximum = totalTime; // Iguala o maximum (usado na barra de progresso) ao tempo total, mantendo apenas 1 variavel a ser definida no Unity
-        TimeTresEstrelas = totalTime - ((totalTime * 60) / 100); //Calcula o tempo que tem para ganhar 3 estrelas (60%)
-        TimeDuasEstrelas = totalTime - ((totalTime * 85) / 100); //Calcula o tempo que tem para ganhar 2 estrelas (85%)
+        TimeTresEstrelas = totalTime - ((totalTime * 45) / 100); //Calcula o tempo que tem para ganhar 3 estrelas (45%)
+        TimeDuasEstrelas = totalTime - ((totalTime * 75) / 100); //Calcula o tempo que tem para ganhar 2 estrelas (75%)
     }
 
     // Update is called once per frame
