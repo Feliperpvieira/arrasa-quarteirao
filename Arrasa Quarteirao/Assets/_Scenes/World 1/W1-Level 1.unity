@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.18028355, g: 0.22571374, b: 0.30692255, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028352, g: 0.22571376, b: 0.30692244, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -120,7 +120,7 @@ NavMeshSettings:
     accuratePlacement: 0
     debug:
       m_Flags: 0
-  m_NavMeshData: {fileID: 23800000, guid: 76b32cf6f54fe4c5d9145cd23dc93f5b, type: 2}
+  m_NavMeshData: {fileID: 23800000, guid: 708c0a9d69c4e144b9fcdc85e26d465c, type: 2}
 --- !u!1 &11556157
 GameObject:
   m_ObjectHideFlags: 0
@@ -22725,7 +22725,7 @@ PrefabInstance:
     - target: {fileID: 8877270438639468928, guid: e396f517550cfc74e99d15b40fae8405,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.5
+      value: 1.5
       objectReference: {fileID: 0}
     - target: {fileID: 8877270438639468928, guid: e396f517550cfc74e99d15b40fae8405,
         type: 3}
@@ -43883,6 +43883,26 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 20825834836361858, guid: 8cc3aa32cd7b8964caca056ec06e158c,
         type: 3}
+      propertyPath: xMax
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 20825834836361858, guid: 8cc3aa32cd7b8964caca056ec06e158c,
+        type: 3}
+      propertyPath: xMin
+      value: -3
+      objectReference: {fileID: 0}
+    - target: {fileID: 20825834836361858, guid: 8cc3aa32cd7b8964caca056ec06e158c,
+        type: 3}
+      propertyPath: zMax
+      value: 0.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 20825834836361858, guid: 8cc3aa32cd7b8964caca056ec06e158c,
+        type: 3}
+      propertyPath: zMin
+      value: -2.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 20825834836361858, guid: 8cc3aa32cd7b8964caca056ec06e158c,
+        type: 3}
       propertyPath: PlayerTransform
       value: 
       objectReference: {fileID: 899644615}
@@ -44040,6 +44060,16 @@ PrefabInstance:
       propertyPath: Jogador
       value: 
       objectReference: {fileID: 899644612}
+    - target: {fileID: 1680675640892723274, guid: 3442e2b37c623c747ac477a6958db485,
+        type: 3}
+      propertyPath: totalTime
+      value: 120
+      objectReference: {fileID: 0}
+    - target: {fileID: 1680675640892723274, guid: 3442e2b37c623c747ac477a6958db485,
+        type: 3}
+      propertyPath: estrelasNomeMundoFase
+      value: W1L1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3442e2b37c623c747ac477a6958db485, type: 3}
 --- !u!1001 &2185233491463070507
