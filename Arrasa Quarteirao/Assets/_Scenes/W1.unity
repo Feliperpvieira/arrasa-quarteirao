@@ -2409,7 +2409,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1806362877}
-        m_MethodName: Select
+        m_MethodName: SelectScene
         m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
