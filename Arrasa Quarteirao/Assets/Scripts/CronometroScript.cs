@@ -8,8 +8,10 @@ using TMPro;
 
 public class CronometroScript : MonoBehaviour
 {
-    [Header("Dados para salvar as estrelas")]
-    public string estrelasNomeMundoFase;
+    //[Header("Dados para salvar as estrelas")]
+    private string codigoFase;
+    private string codigoMundo;
+    private string codigoMundoFase;
 
     [Header("Tempo da fase")]
     public float totalTime; //tempo total da fase
@@ -36,6 +38,21 @@ public class CronometroScript : MonoBehaviour
     // Define os tempos para cada estrela na fase
     void Start()
     {
+        string nomeDoArquivo = SceneManager.GetActiveScene().name; //Pega o nome da scene !ATENCAO! USAR SEMPRE O FORMATO: W1-Level 0 para isso funcionar
+
+        // Aqui ele vai juntar os trechos do nome da scene da fase pra montar o código, que vai ser usada pra salvar o numero de estrelas no PlayerPrefs
+        codigoMundo = "W" + nomeDoArquivo[1];
+        if (nomeDoArquivo.Length == 10)
+        {
+            codigoFase = "L" + nomeDoArquivo[9];
+        }
+        else if (nomeDoArquivo.Length == 11)
+        {
+            codigoFase = "L" + nomeDoArquivo[9] + nomeDoArquivo[10];
+        }
+        codigoMundoFase = codigoMundo + codigoFase;
+        Debug.Log(codigoMundoFase);  
+
         Time.timeScale = 1f;
         QuantidadeEstrelas = 3;
         maximum = totalTime; // Iguala o maximum (usado na barra de progresso) ao tempo total, mantendo apenas 1 variavel a ser definida no Unity
@@ -98,16 +115,16 @@ public class CronometroScript : MonoBehaviour
         botaoPausa.SetActive(false);
         Time.timeScale = 0f;
 
-        if (PlayerPrefs.GetInt(estrelasNomeMundoFase) == 0) //Faz o passar de nível no levelSelect script
+        if (PlayerPrefs.GetInt(codigoMundoFase) == 0) //Faz o passar de nível no levelSelector script
         {
-            int atual = PlayerPrefs.GetInt("levelAtual");
+            int atual = PlayerPrefs.GetInt("levelAtual-" + codigoMundo);
             atual = atual + 1;
-            PlayerPrefs.SetInt("levelAtual", atual);
+            PlayerPrefs.SetInt("levelAtual-" + codigoMundo, atual);
         }
 
-        if (QuantidadeEstrelas > PlayerPrefs.GetInt(estrelasNomeMundoFase))
+        if (QuantidadeEstrelas > PlayerPrefs.GetInt(codigoMundoFase))
         {
-            PlayerPrefs.SetInt(estrelasNomeMundoFase, QuantidadeEstrelas);
+            PlayerPrefs.SetInt(codigoMundoFase, QuantidadeEstrelas);
         }
 
         enabled = false;

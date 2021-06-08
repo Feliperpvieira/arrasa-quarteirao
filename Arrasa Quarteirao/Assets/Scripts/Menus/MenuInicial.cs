@@ -14,7 +14,7 @@ public class MenuInicial : MonoBehaviour
     void Start()
     {
         //totalEstrelasText.text = "Fase 0: " + PlayerPrefs.GetInt("W1L0", 0).ToString() + ", Fase 1: " + PlayerPrefs.GetInt("W1L1", 0).ToString() + ", Fase 2: " + PlayerPrefs.GetInt("W1L2", 0).ToString() + ", Fase 3: " + PlayerPrefs.GetInt("W1L3", 0).ToString() + ", Fase SS: " + PlayerPrefs.GetInt("W1L4", 0).ToString();
-        totalEstrelasText.text = "Fase 0: " + PlayerPrefs.GetInt("W1L0", 0).ToString() + ", Fase SS: " + PlayerPrefs.GetInt("W1L4", 0).ToString() + " || Fase atual: " + PlayerPrefs.GetInt("levelAtual").ToString();
+        totalEstrelasText.text = "Fase 0: " + PlayerPrefs.GetInt("W1L0", 0).ToString() + ", Fase 1: " + PlayerPrefs.GetInt("W1L1", 0).ToString() + " || Fase atual: " + PlayerPrefs.GetInt("levelAtual-W1").ToString();
     }
 
     // Update is called once per frame
@@ -25,7 +25,7 @@ public class MenuInicial : MonoBehaviour
 
     public void JogarBotao()
     {
-        SceneManager.LoadScene("LevelSelect");
+        SceneManager.LoadScene("W1");
     }
 
     public void QuitGame()

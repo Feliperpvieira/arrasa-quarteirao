@@ -6,7 +6,7 @@ using TMPro;
 public class LevelSelector : MonoBehaviour
 {
 	public TMP_Text numeroEstrelas;
-	public string codigoDoMundo;
+	private string codigoDoMundo;
     public Button[] levelButtons;
 
 	private int totalEstrelasMundo;
@@ -14,8 +14,9 @@ public class LevelSelector : MonoBehaviour
     void Start ()
 	{
 		totalEstrelasMundo = 0;
+		codigoDoMundo = SceneManager.GetActiveScene().name;
 
-		int levelReached = PlayerPrefs.GetInt("levelAtual");
+		int levelReached = PlayerPrefs.GetInt("levelAtual-" + codigoDoMundo);
 
 		for (int i = 0; i < levelButtons.Length; i++)
 		{
@@ -28,9 +29,9 @@ public class LevelSelector : MonoBehaviour
 		numeroEstrelas.text = totalEstrelasMundo.ToString();
 	}
 
-    public void Select (string levelName)
+    /*public void Select (string levelName)
     {
         SceneManager.LoadScene(levelName);
-    }
+    }*/
 
 }
