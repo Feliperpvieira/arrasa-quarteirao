@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 237228141339260228}
   - component: {fileID: 237228141339260229}
-  - component: {fileID: 3519449470943787116}
+  - component: {fileID: 4058059490141878103}
   m_Layer: 0
   m_Name: "Cancela Rota\xE7\xE3o"
   m_TagString: Untagged
@@ -40,13 +40,14 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 237228141339260231}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 83ede27a33af3b44a8d9e80eed339462, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tempoIntervalo: 6
---- !u!95 &3519449470943787116
+  animator: {fileID: 4058059490141878103}
+  aberto: 0
+--- !u!95 &4058059490141878103
 Animator:
   serializedVersion: 3
   m_ObjectHideFlags: 0
@@ -447,7 +448,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7812631061056992159}
-  m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
+  m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
   m_LocalPosition: {x: 0.004000306, y: 0.25000024, z: 2.7590013}
   m_LocalScale: {x: 180, y: 100.000046, z: 160}
   m_Children: []

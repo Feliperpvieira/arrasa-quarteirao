@@ -4,15 +4,30 @@ using UnityEngine;
 
 public class GuaritaRotation : MonoBehaviour
 {
-    public int tempoIntervalo;
-    float angle = 90f;
+    public Animator animator;
+    public bool aberto;
+
+    //public int tempoIntervalo;
+    //float angle = 90f;
 
     void Start()
     {
-        StartCoroutine(Coroutine());
+        //StartCoroutine(Coroutine());
     }
 
-    IEnumerator Coroutine()
+    void Update()
+    {
+        if (aberto)
+        {
+            animator.SetBool("aberto", true);
+        }
+        else
+        {
+            animator.SetBool("aberto", false);
+        }
+    }
+
+    /*IEnumerator Coroutine()
     {
         while (true)
         {
@@ -24,9 +39,9 @@ public class GuaritaRotation : MonoBehaviour
             {
                 angle = 90f;
             }
-            transform.Rotate(angle, 0.0f, 0f);
+            transform.rotation = new Quaternion(angle, 0, 0, 0);
             yield return new WaitForSeconds(tempoIntervalo);
         }
-    }
+    }*/
 
 }
