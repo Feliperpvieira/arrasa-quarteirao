@@ -9,7 +9,7 @@ public class LevelSelector : MonoBehaviour
 	private string codigoDoMundo;
     public Button[] levelButtons;
 
-	private int totalEstrelasMundo;
+	public static int totalEstrelasMundo;
 
     void Update () //Era start, mas eu mudei pra Update pra fazer o Select() continuar pra sempre. Checar outras formas pra deixar de usar isso tudo num Update
 	{
