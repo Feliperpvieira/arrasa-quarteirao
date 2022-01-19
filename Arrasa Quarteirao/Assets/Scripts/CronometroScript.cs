@@ -29,6 +29,7 @@ public class CronometroScript : MonoBehaviour
     public TMP_Text countdownText;
     public GameObject MenuMorte;
     public GameObject MenuVitoria;
+    public Animator CanvasVitoria;
     public GameObject botaoPausa;
     public GameObject Jogador;
 
@@ -112,6 +113,7 @@ public class CronometroScript : MonoBehaviour
     public void Vitoria()
     {
         MenuVitoria.SetActive(true);
+        CanvasVitoria.Play("Base Layer.CanvasVitoria", 0, 0f);
         botaoPausa.SetActive(false);
         Time.timeScale = 0f;
 
