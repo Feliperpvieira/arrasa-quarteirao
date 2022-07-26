@@ -43968,6 +43968,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1680675640149062986, guid: 3442e2b37c623c747ac477a6958db485,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 1.000061
+      objectReference: {fileID: 0}
     - target: {fileID: 1680675640184226201, guid: 3442e2b37c623c747ac477a6958db485,
         type: 3}
       propertyPath: m_RootOrder
@@ -44116,6 +44121,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: TouchJoystick
+      objectReference: {fileID: 0}
+    - target: {fileID: 5300894051720694758, guid: 77ebf146ee587d54dbe9262f2571fd65,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8877444189833842757, guid: 77ebf146ee587d54dbe9262f2571fd65,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 77ebf146ee587d54dbe9262f2571fd65, type: 3}
