@@ -1,4 +1,6 @@
-# arrasa-quarteirao
+<img width="1190" alt="Frame 14097 (1)" src="https://user-images.githubusercontent.com/47862856/181107449-3c9624b8-bd89-45ed-8410-26777dbc3612.png">
+
+# Arrasa Quarteirão
 Jogo da disciplina DSG1432 - Computação para Jogos, do professor Leonardo Cardarelli.\
 Feito por Felipe Rabaça, João Pedro Mafra, Lucas Araujo e Vitor Ourô.
 
