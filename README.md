@@ -12,15 +12,13 @@ Versões do jogo: [releases](https://github.com/Feliperpvieira/arrasa_quarteirao
 Próximos passos: [issues](https://github.com/Feliperpvieira/arrasa_quarteirao/issues)\
 Planejamento: [project](https://github.com/users/Feliperpvieira/projects/1)
 
-**COMO JOGAR:**\
+### COMO JOGAR:
 📱Versão para **Android** ou **Windows**: Acesse os [releases](https://github.com/Feliperpvieira/arrasa_quarteirao/releases) e baixe o arquivo para sua plataforma disponível na última versão publicada.
 
 🖥️ Versão **online**: http://feliperpv.com/arrasa_quarteirao/ \
 Aviso: a versão online é jogável dentro do seu navegador e, portanto, possui limitações de desempenho. Possíveis problemas de compatibilidade com seu navegador também podem acontecer.
 
-<br/>
-
-**COMO ABRIR O PROJETO DO JOGO NO UNITY:**
+### COMO ABRIR O PROJETO DO JOGO NO UNITY:
 Com o repositório clonado ou baixado no seu computador, no Unity Hub vá em "Add" e selecione a pasta "Arrasa Quarteirao", localizada dentro da pasta "arrasa_quarteirao".
 
 ----------
