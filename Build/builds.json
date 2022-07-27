@@ -1,0 +1,17 @@
+{
+"companyName": "DefaultCompany",
+"productName": "Arrasa Quarteirão",
+"productVersion": "0.1",
+"dataUrl": "builds.data.unityweb",
+"wasmCodeUrl": "builds.wasm.code.unityweb",
+"wasmFrameworkUrl": "builds.wasm.framework.unityweb",
+"graphicsAPI": ["WebGL 2.0"],
+"webglContextAttributes": {"preserveDrawingBuffer": false},
+"backgroundUrl": "builds.jpg",
+"splashScreenStyle": "Light",
+"backgroundColor": "#FFFFFF",
+"cacheControl": {"default": "must-revalidate"},
+"developmentBuild": false,
+"multithreading": false,
+"unityVersion": "2019.4.23f1"
+}
