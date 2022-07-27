@@ -41,5 +41,9 @@ ORIENTAÇÃO: Werther Azevedo
 **MÚSICA**\
 João Pedro Mafra
 
+**HISTÓRIA E NARRATIVA**\
+Felipe Rabaça e João Pedro Mafra\
+ORIENTAÇÃO: Rian Rezende
+
 **AGRADECIMENTOS ESPECIAIS**\
 Gustavo Camerano
