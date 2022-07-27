@@ -4,12 +4,22 @@
 Jogo mobile estilo arcade em que o jogador precisa escapar do tanque enquanto arrasa tudo a sua volta!
 
 ----------
+### Sobre o jogo
+Arrasa Quarteirão é um jogo singleplayer estilo arcade, em que o jogador controla MAQ-11 - um simpático monstão azul - enquanto tenta escapar do tanque PM-1442. Seu objetivo é destruir o máximo de construções no menor tempo possível!
 
-**COMO ABRIR O PROJETO DO JOGO NO UNITY:**
+**Confira**:\
+Versões do jogo: [releases](https://github.com/Feliperpvieira/arrasa_quarteirao/releases)\
+Próximos passos: [issues](https://github.com/Feliperpvieira/arrasa_quarteirao/issues)\
+Planejamento: [project](https://github.com/users/Feliperpvieira/projects/1)
+
+### COMO JOGAR:
+📱Versão para **Android** ou **Windows**: Acesse os [releases](https://github.com/Feliperpvieira/arrasa_quarteirao/releases) e baixe o arquivo para sua plataforma disponível na última versão publicada.
+
+🖥️ Versão **online**: http://feliperpv.com/arrasa_quarteirao/ \
+Aviso: a versão online é jogável dentro do seu navegador e, portanto, possui limitações de desempenho. Possíveis problemas de compatibilidade com seu navegador também podem acontecer.
+
+### COMO ABRIR O PROJETO DO JOGO NO UNITY:
 Com o repositório clonado ou baixado no seu computador, no Unity Hub vá em "Add" e selecione a pasta "Arrasa Quarteirao", localizada dentro da pasta "arrasa_quarteirao".
-
-**COMO JOGAR:**
-Acesse os [releases](https://github.com/Feliperpvieira/arrasa_quarteirao/releases) e baixe o arquivo para sua plataforma disponível na última versão publicada.
 
 ----------
 
