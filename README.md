@@ -55,5 +55,8 @@ João Pedro Mafra
 Felipe Rabaça e João Pedro Mafra\
 ORIENTAÇÃO: Rian Rezende
 
+**IDENTIDADE VISUAL**\
+Lucas Araujo
+
 **AGRADECIMENTOS ESPECIAIS**\
 Gustavo Camerano
