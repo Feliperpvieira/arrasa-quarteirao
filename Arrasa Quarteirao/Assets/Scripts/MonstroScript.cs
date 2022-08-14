@@ -5,6 +5,8 @@ using UnityEngine.UI;
 
 public class MonstroScript : MonoBehaviour
 {
+
+    public Rigidbody rb;
     [Header("Monstro specs")]
     public float speed;
     public float rotationSpeed;
@@ -16,6 +18,11 @@ public class MonstroScript : MonoBehaviour
     //Variaveis usadas na Movimentacao
     float horizontal;
     float vertical;
+
+    void Start()
+    {
+        rb = GetComponent<Rigidbody>();
+    }
 
     // Update is called once per frame
     void Update()
@@ -40,7 +47,7 @@ public class MonstroScript : MonoBehaviour
         movementDirection.Normalize();
 
         //Rotacao
-        transform.Translate(movementDirection * speed * Time.deltaTime, Space.World);
+        rb.velocity = movementDirection * speed;
 
         if (movementDirection != Vector3.zero)
         {
