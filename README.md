@@ -63,4 +63,6 @@ Lucas Araujo
 Felipe Rabaça
 
 **AGRADECIMENTOS ESPECIAIS**\
-Gustavo Camerano
+Gustavo Camerano\
+Hugo Tonette\
+Sol Seda
