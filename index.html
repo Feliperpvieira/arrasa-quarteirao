@@ -56,11 +56,11 @@
       }
 
       var buildUrl = "Build";
-      var loaderUrl = buildUrl + "/arrasa.loader.js";
+      var loaderUrl = buildUrl + "/arrasa-web.loader.js";
       var config = {
-        dataUrl: buildUrl + "/arrasa.data.gz",
-        frameworkUrl: buildUrl + "/arrasa.framework.js.gz",
-        codeUrl: buildUrl + "/arrasa.wasm.gz",
+        dataUrl: buildUrl + "/arrasa-web.data",
+        frameworkUrl: buildUrl + "/arrasa-web.framework.js",
+        codeUrl: buildUrl + "/arrasa-web.wasm",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "DefaultCompany",
         productName: "Arrasa Quarteirão",
@@ -99,7 +99,7 @@
         canvas.style.height = "720px";
       }
 
-      canvas.style.background = "url('" + buildUrl + "/arrasa.jpg.gz') center / cover";
+      canvas.style.background = "url('" + buildUrl + "/arrasa-web.jpg') center / cover";
       loadingBar.style.display = "block";
 
       var script = document.createElement("script");
