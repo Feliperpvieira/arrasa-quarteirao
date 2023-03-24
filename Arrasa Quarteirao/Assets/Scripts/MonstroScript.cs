@@ -31,7 +31,7 @@ public class MonstroScript : MonoBehaviour
         //Movimetacao
         horizontal = SimpleInput.GetAxisRaw("Horizontal"); //O "Raw" depois de GetAxis faz com que o personagem só mexa enquanto a tecla está pressionada
         vertical = SimpleInput.GetAxisRaw("Vertical");
-        /*if (Input.touchCount > 0)
+        /*if (Input.touchCount > 0) //maneira antiga que usava diferente pra touch e teclado
         {
             horizontal = JoystickController.joystickInput.x;
             vertical = JoystickController.joystickInput.y;

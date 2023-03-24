@@ -43988,22 +43988,22 @@ PrefabInstance:
     - target: {fileID: 20825834836361858, guid: 8cc3aa32cd7b8964caca056ec06e158c,
         type: 3}
       propertyPath: xMax
-      value: 3
+      value: 7.5
       objectReference: {fileID: 0}
     - target: {fileID: 20825834836361858, guid: 8cc3aa32cd7b8964caca056ec06e158c,
         type: 3}
       propertyPath: xMin
-      value: -3
+      value: -4
       objectReference: {fileID: 0}
     - target: {fileID: 20825834836361858, guid: 8cc3aa32cd7b8964caca056ec06e158c,
         type: 3}
       propertyPath: zMax
-      value: 0.8
+      value: 3.15
       objectReference: {fileID: 0}
     - target: {fileID: 20825834836361858, guid: 8cc3aa32cd7b8964caca056ec06e158c,
         type: 3}
       propertyPath: zMin
-      value: -2.1
+      value: -3.75
       objectReference: {fileID: 0}
     - target: {fileID: 20825834836361858, guid: 8cc3aa32cd7b8964caca056ec06e158c,
         type: 3}

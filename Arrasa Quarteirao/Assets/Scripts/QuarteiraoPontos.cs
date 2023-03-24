@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class QuarteiraoPontos : MonoBehaviour
 {
@@ -20,8 +21,11 @@ public class QuarteiraoPontos : MonoBehaviour
 
     void ShowPontosBonus()
     {
-        var go = Instantiate(txtBonusPrefab, transform.position, Quaternion.Euler(90, 0, 0));
-        go.GetComponent<TextMesh>().text = "+" + bonusQuarteiraoScore.ToString();
+        Vector3 posicao = transform.position;
+        posicao.y = 6f; //define o y em um ponto mais alto que a construcao para que o texto seja visivel
+
+        var go = Instantiate(txtBonusPrefab, posicao, Quaternion.Euler(90, 0, 0));
+        go.GetComponent<TMP_Text>().text = "+" + bonusQuarteiraoScore.ToString();
     }
 
 }

@@ -44,3 +44,6 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Texto sobre
+    uniqueID: 870983837
+    locked: 0
