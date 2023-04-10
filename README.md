@@ -3,6 +3,8 @@
 # Arrasa Quarteirão
 Jogo mobile estilo arcade em que o jogador precisa escapar do tanque enquanto arrasa tudo a sua volta!
 
+<a href='https://play.google.com/store/apps/details?id=com.frpv.ArrasaQuarteiro&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'><img alt='Get it on Google Play' width="200px" src='https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png'/></a>
+
 ----------
 ### Sobre o jogo
 Arrasa Quarteirão é um jogo singleplayer estilo arcade, em que o jogador controla MAQ-11 - um simpático monstão azul - enquanto tenta escapar do tanque PM-1442. Seu objetivo é destruir o máximo de construções no menor tempo possível!
