@@ -3,7 +3,14 @@
 # Arrasa Quarteirão
 Jogo mobile estilo arcade em que o jogador precisa escapar do tanque enquanto arrasa tudo a sua volta!
 
+
+<div>
 <a href='https://play.google.com/store/apps/details?id=com.frpv.ArrasaQuarteiro&utm_source=github&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'><img alt='Get it on Google Play' width="200px" src='https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png'/></a>
+
+<a href="https://apps.microsoft.com/store/detail/9P6BNZXXRT52?launch=true&mode=mini">
+	<img width="180px" src="https://get.microsoft.com/images/en-us%20dark.svg"/>
+</a>
+</div>
 
 ----------
 ### Sobre o jogo
