@@ -7,6 +7,10 @@ header{
     font-family: 'Jockey One', sans-serif;
 }
 
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
 /* Barra frpv */
 .nav-frpv{
     background: linear-gradient(280.12deg, #F5F5F5 41.12%, #FFFFFF 100.31%);
@@ -49,9 +53,13 @@ nav img{
     font-size: 1.2rem;
 }
 
+.github{
+    text-align: center;
+    padding-bottom: 3rem;
+}
+
 /* Footer */
 footer{
-    font-family: 'Roboto', sans-serif;
     font-weight: 300;
     font-size: 0.8rem;
     width: 80%;
