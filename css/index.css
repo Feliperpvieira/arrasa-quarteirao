@@ -1,0 +1,59 @@
+/*! minireset.css v0.0.6 | MIT License | github.com/jgthms/minireset.css */
+html,body,p,ol,ul,li,dl,dt,dd,blockquote,figure,fieldset,legend,textarea,pre,iframe,hr,h1,h2,h3,h4,h5,h6{margin:0;padding:0}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal}ul{list-style:none}button,input,select{margin:0}html{box-sizing:border-box}*,*::before,*::after{box-sizing:inherit}img,video{height:auto;max-width:100%}iframe{border:0}table{border-collapse:collapse;border-spacing:0}td,th{padding:0}
+
+/* Header */
+header{
+    background-color: #57C4F9;
+    font-family: 'Jockey One', sans-serif;
+}
+
+/* Barra frpv */
+.nav-frpv{
+    background: linear-gradient(280.12deg, #F5F5F5 41.12%, #FFFFFF 100.31%);
+    overflow: hidden;
+}
+
+header nav, .aq-head{
+    width: 80%;
+    margin: auto;
+    margin-bottom: 1rem;
+}
+
+nav img{
+    margin-top: 1rem;
+    margin-right: 2rem;
+    margin-bottom: -0.5rem;
+    padding-right: 2rem;
+    width: 7rem;
+}
+
+/* cabeçalho arrasador */
+.aq-head{
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+.aq-head img, .aq-head a{
+    display: block;
+    margin: auto;
+}
+
+.aq-head a{
+    margin-top: 2rem;
+    margin-bottom: -0.5rem;
+}
+
+.link-online{
+    text-align: center;
+    color: white;
+    font-size: 1.2rem;
+}
+
+/* Footer */
+footer{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 0.8rem;
+    width: 80%;
+    margin: auto;
+}
