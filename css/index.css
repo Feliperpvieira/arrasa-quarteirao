@@ -7,15 +7,6 @@ header{
     font-family: 'Jockey One', sans-serif;
 }
 
-h1, h2, h3, h4, h5, h6{
-    font-family: 'Jockey One', sans-serif;
-    color: #57C4F9;
-}
-
-body{
-    font-family: 'Roboto', sans-serif;
-}
-
 /* Barra frpv */
 .nav-frpv{
     background: linear-gradient(280.12deg, #F5F5F5 41.12%, #FFFFFF 100.31%);
