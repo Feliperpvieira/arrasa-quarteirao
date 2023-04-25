@@ -1,9 +1,13 @@
 /*! minireset.css v0.0.6 | MIT License | github.com/jgthms/minireset.css */
 html,body,p,ol,ul,li,dl,dt,dd,blockquote,figure,fieldset,legend,textarea,pre,iframe,hr,h1,h2,h3,h4,h5,h6{margin:0;padding:0}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal}ul{list-style:none}button,input,select{margin:0}html{box-sizing:border-box}*,*::before,*::after{box-sizing:inherit}img,video{height:auto;max-width:100%}iframe{border:0}table{border-collapse:collapse;border-spacing:0}td,th{padding:0}
 
+html{
+    font-size: 16px;
+}
+
 /* Header */
 header{
-    background-color: #57C4F9;
+    /* background-color: #57C4F9; */
     font-family: 'Jockey One', sans-serif;
 }
 
@@ -14,35 +18,53 @@ body{
 /* Barra frpv */
 .nav-frpv{
     background: linear-gradient(280.12deg, #F5F5F5 41.12%, #FFFFFF 100.31%);
-    overflow: hidden;
+
+    display: flex;
+    border-end-end-radius: 36px;
+    width: 200px;
+    height: 64px;
 }
 
-header nav, .aq-head{
-    width: 80%;
-    margin: auto;
-    margin-bottom: 1rem;
-}
-
-nav img{
-    margin-top: 1rem;
-    margin-right: 2rem;
-    margin-bottom: -0.5rem;
-    padding-right: 2rem;
-    width: 7rem;
+.nav-frpv img{
+justify-content: center;
+margin: auto;
 }
 
 /* cabeçalho arrasador */
+/* Cover image */
 .aq-head{
-    padding-top: 5rem;
-    padding-bottom: 5rem;
+    display: block; 
+    width: 100%;
+    height: 640px;
+    overflow: hidden;
+    position: relative; /* used to center img */
+    border: none;
+    border-radius: 0;
 }
 
-.aq-head img, .aq-head a{
-    display: block;
+.aq-head > img{
+    width: 100%;
+    position: absolute; /* img centered */
+    top:-100%; left:0; right: 0; bottom:-100%;
+    margin: auto;
+    z-index: -9;
+}
+
+/* logo e botoes */
+.logos-cover{
+    display: flex;
+    flex-direction: column;
+}
+
+.logos-cover img, .logos-cover a{
     margin: auto;
 }
 
-.aq-head a{
+.logos-cover img{
+    margin-top: 2rem;
+}
+
+.logos-cover a{
     margin-top: 2rem;
     margin-bottom: -0.5rem;
 }
@@ -56,12 +78,40 @@ nav img{
 .github{
     text-align: center;
     padding-bottom: 3rem;
+    margin-top: 3rem;
 }
 
 /* Footer */
 footer{
+    margin-top: 3rem;
     font-weight: 300;
-    font-size: 0.8rem;
-    width: 80%;
+}
+
+.maq-footer{
+    display: block;
     margin: auto;
+}
+
+footer section{
+    background-color: #57C4F9;
+    margin-top: -32px;
+    text-align: center;
+    padding: 5rem 0 3rem 0;
+}
+
+footer section > div{
+    margin-top: 26px;
+}
+
+.contato{
+    line-height: 130%;
+}
+
+.contato a{
+    color: black;
+}
+
+.termos-legais{
+    font-size: 12px;
+    line-height: 160%;
 }
