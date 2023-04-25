@@ -115,3 +115,25 @@ footer section > div{
     font-size: 12px;
     line-height: 160%;
 }
+
+
+
+
+
+
+/* Mobile */
+@media screen and (max-width: 760px) {
+    .aq-head{
+        height: 980px;
+    }
+
+    .nav-frpv{
+        width: 400px;
+        height: 128px;
+        border-end-end-radius: 64px;
+    }
+
+    .nav-frpv img{
+        width: 140px;
+    }
+}
