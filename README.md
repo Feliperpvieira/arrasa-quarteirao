@@ -16,7 +16,7 @@ Próximos passos: [issues](https://github.com/Feliperpvieira/arrasa_quarteirao/i
 Planejamento: [project](https://github.com/users/Feliperpvieira/projects/1)
 
 ### COMO JOGAR:
-📱Versão para **Android**, **MacOS** ou **Windows**: Acesse os [releases](https://github.com/Feliperpvieira/arrasa_quarteirao/releases) e baixe o arquivo para sua plataforma disponível na última versão publicada.
+📱Versão para **Android**, **MacOS** ou **Windows**: Acesse os [releases](https://github.com/Feliperpvieira/arrasa_quarteirao/releases) e baixe o arquivo para sua plataforma disponível na última versão publicada. Ou baixe direto na [Google Play Store](https://play.google.com/store/apps/details?id=com.frpv.ArrasaQuarteiro&utm_source=github&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1).
 
 🖥️ Versão **online**: https://feliperpv.com/arrasaquarteirao/play/ \
 Aviso: a versão online é jogável dentro do seu navegador e, portanto, possui limitações de desempenho. Possíveis problemas de compatibilidade com seu navegador também podem acontecer. Não necessariamente as versões online e instaláveis estarão no mesmo momento de desenvolvimento.
@@ -35,6 +35,9 @@ ORIENTAÇÃO: Leonardo Cardarelli
 **GAME CONCEPT**\
 Deborah Ghelman, Lucas Araujo, Marcelo Barros, Vitor Ourô\
 ORIENTAÇÃO: Alexandre Cantini
+
+**PRODUÇÃO E DISTRIBUIÇÃO**\
+Felipe Rabaça
 
 **PROGRAMAÇÃO**\
 Felipe Rabaça, Vitor Ourô
@@ -63,6 +66,9 @@ ORIENTAÇÃO: Rian Rezende
 Lucas Araujo
 
 **INTERFACE DO USUÁRIO**\
+Felipe Rabaça
+
+**WEBSITE**\
 Felipe Rabaça
 
 **AGRADECIMENTOS ESPECIAIS**\
