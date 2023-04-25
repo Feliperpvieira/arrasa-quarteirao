@@ -26,8 +26,8 @@ body{
 }
 
 .nav-frpv img{
-justify-content: center;
-margin: auto;
+    justify-content: center;
+    margin: auto;
 }
 
 /* cabeçalho arrasador */
@@ -124,16 +124,29 @@ footer section > div{
 /* Mobile */
 @media screen and (max-width: 760px) {
     .aq-head{
-        height: 980px;
+        height: 660px;
     }
 
     .nav-frpv{
-        width: 400px;
-        height: 128px;
-        border-end-end-radius: 64px;
+        width: 220px;
+        height: 72px;
+        border-end-end-radius: 48px;
     }
 
     .nav-frpv img{
-        width: 140px;
+        width: 80px;
+    }
+
+    .aq-head > img{
+        height: 100%;
+    }
+
+    .logos-cover > img{
+        margin-top: 3.5rem;
+        width: 85%;
+    }
+
+    .logos-cover a{
+        margin-top: 1rem;
     }
 }
