@@ -56,22 +56,64 @@ body{
     flex-direction: column;
 }
 
-.logos-cover img, .logos-cover a{
+.logo-aq-header{
     margin: auto;
 }
 
-.logos-cover img{
+.logo-aq-header{
     margin-top: 2rem;
 }
 
 .logos-cover a{
-    margin-top: 2rem;
+    text-decoration: none;
+    margin: auto;
+    height: 72px;
+    width: 540px;
+    padding: 4px;
+    margin-top: 4rem;
     margin-bottom: -0.5rem;
+    background-color: #57C4F9;
+    border-radius: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    transition: 0.2s ease-out;
+    
+}
+
+.logos-cover a:hover{
+    width: 600px;
+}
+
+.logos-cover h3{
+    font-size: 36px;
+    margin-right: 36px;
+    color: #303030;
+    text-shadow:
+    -2px 0px 1px white,
+    2px 0px 1px white,
+    0px -2px 1px white,
+    0px 2px 1px white;
+}
+
+.logos-cover .botao-play{
+    height: 72px;
+    width: auto;
+    transition: .2s ease-in-out;
+}
+
+.logos-cover a:hover .botao-play{
+    transform: rotate(4deg);
+    height: 84px;
 }
 
 .link-online{
     text-align: center;
-    color: white;
+    color: #303030;
+    display: block;
+    text-align: center;
     font-size: 1.2rem;
 }
 
@@ -122,12 +164,13 @@ footer section > div{
 /* Mobile */
 @media screen and (max-width: 760px) {
     .aq-head{
-        height: 660px;
+        height: 650px;
     }
 
     .nav-frpv{
-        height: 72px;
-        border-end-end-radius: 48px;
+        height: 64px;
+        width: 180px;
+
     }
 
     .nav-frpv img{
@@ -138,13 +181,36 @@ footer section > div{
         height: 100%;
     }
 
-    .logos-cover > img{
-        margin-top: 3.5rem;
-        width: 85%;
+    .logo-aq-header{
+        margin-top: 4.5rem;
+        width: 75%;
+        max-height: 300px;
     }
 
     .logos-cover a{
-        margin-top: 1rem;
+        width: 200px;
+        height: auto;
+        margin-top: 3.5rem;
+        padding: 10px 12px;
+        border-radius: 20px;
+
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .logos-cover a:hover{
+        width: 220px;
+    }
+
+    .logos-cover h3{
+        font-size: 32px;
+        margin-right: 0;
+    }
+
+    .logos-cover .botao-play{
+        height: auto;
+        width: 100%;
     }
 
     .termos-legais{
