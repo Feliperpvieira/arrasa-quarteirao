@@ -6,7 +6,7 @@ html{
 }
 
 /* Header */
-header{
+h1, h2, h3, h4, h5, h6{
     /* background-color: #57C4F9; */
     font-family: 'Jockey One', sans-serif;
 }
@@ -106,7 +106,7 @@ body{
 
 .logos-cover a:hover .botao-play{
     transform: rotate(4deg);
-    height: 84px;
+    height: 92px;
 }
 
 .link-online{
@@ -115,6 +115,8 @@ body{
     display: block;
     text-align: center;
     font-size: 1.2rem;
+
+    margin-top: 2rem;
 }
 
 .github{
