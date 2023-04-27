@@ -1,4 +1,4 @@
-<img width="1190" alt="Frame 14097 (1)" src="https://user-images.githubusercontent.com/47862856/181107449-3c9624b8-bd89-45ed-8410-26777dbc3612.png">
+<img width="1190" alt="Banner GitHub readme Arrasador" src="https://user-images.githubusercontent.com/47862856/234868485-564b7437-6653-4e8e-9273-5c8c84de18a5.png">
 
 # Arrasa Quarteirão
 Jogo mobile estilo arcade em que o jogador precisa escapar do tanque enquanto arrasa tudo a sua volta!
@@ -11,6 +11,7 @@ Jogo mobile estilo arcade em que o jogador precisa escapar do tanque enquanto ar
 Arrasa Quarteirão é um jogo singleplayer estilo arcade, em que o jogador controla MAQ-11 - um simpático monstão azul - enquanto tenta escapar do tanque PM-1442. Seu objetivo é destruir o máximo de construções no menor tempo possível!
 
 **Confira**:\
+Website oficial: [feliperpv.com/arrasaquarteirao](https://feliperpv.com/arrasaquarteirao/)\
 Versões do jogo: [releases](https://github.com/Feliperpvieira/arrasa_quarteirao/releases)\
 Próximos passos: [issues](https://github.com/Feliperpvieira/arrasa_quarteirao/issues)\
 Planejamento: [project](https://github.com/users/Feliperpvieira/projects/1)
@@ -71,7 +72,7 @@ Felipe Rabaça
 **WEBSITE**\
 Felipe Rabaça
 
-**AGRADECIMENTOS ESPECIAIS**\
+**Agradecimentos especiais**\
 Gustavo Camerano\
 Hugo Tonette\
 Sol Seda
