@@ -23,7 +23,7 @@ Planejamento: [project](https://github.com/users/Feliperpvieira/projects/1)
 Aviso: a versão online é jogável dentro do seu navegador e, portanto, possui limitações de desempenho. Possíveis problemas de compatibilidade com seu navegador também podem acontecer. Não necessariamente as versões online e instaláveis estarão no mesmo momento de desenvolvimento.
 
 ### COMO ABRIR O PROJETO DO JOGO NO UNITY:
-Com o repositório clonado ou baixado no seu computador, no Unity Hub vá em "Add" e selecione a pasta "Arrasa Quarteirao", localizada dentro da pasta "arrasa_quarteirao".\
+Com o repositório clonado ou baixado no seu computador, no Unity Hub vá em "Add project from disk" e selecione a pasta "Arrasa Quarteirao", localizada dentro da pasta "arrasaquarteirao" do GitHub.\
 Versão do Unity: [2021.3.23f1](https://unity.com/releases/2021-lts)
 
 ----------
