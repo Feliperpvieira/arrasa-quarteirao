@@ -24,7 +24,7 @@ Aviso: a versão online é jogável dentro do seu navegador e, portanto, possui 
 
 ### COMO ABRIR O PROJETO DO JOGO NO UNITY:
 Com o repositório clonado ou baixado no seu computador, no Unity Hub vá em "Add" e selecione a pasta "Arrasa Quarteirao", localizada dentro da pasta "arrasa_quarteirao".\
-Versão do Unity: [2021.3.7f1](https://unity.com/releases/2021-lts)
+Versão do Unity: [2021.3.23f1](https://unity.com/releases/2021-lts)
 
 ----------
 
