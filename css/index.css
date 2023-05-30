@@ -172,6 +172,90 @@ footer section > div{
 
 
 
+
+
+/* publi do repraça */
+.repraca{
+    width: 90%;
+    margin: auto;
+
+    /* Degradê bege */
+    background: linear-gradient(136.27deg, rgba(255, 255, 255, 0.95) 17.49%, rgba(254, 242, 224, 0.95) 103.91%), #B76F51;
+    border-radius: 36px;
+
+    padding: 64px;
+    display: flex;
+    justify-content: space-between;
+
+    margin-bottom: -55px;
+}
+
+.repraca > div{
+    max-width: 600px;
+}
+
+.repraca h2, .repraca p{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+}
+
+.repraca h2{
+    font-size: 32px;
+}
+
+.repraca .h-destaque{
+    font-weight: 400;
+    margin-top: 2px;
+    margin-bottom: 18px;
+}
+
+.repraca p{
+    font-size: 24px;
+    margin-bottom: 50px;
+    line-height: 32px;
+}
+
+.repraca a{
+    font-size: 32px;
+    font-weight: 400;
+    color: #F9EFE7;
+    text-decoration: none;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 364px;
+    height: 72px;
+
+    background: linear-gradient(170deg, rgba(10, 110, 182, 0.7) 31.41%, rgba(10, 110, 182, 0.7) 44.7%, rgba(19, 28, 59, 0.7) 102.06%), linear-gradient(151.35deg, rgba(249, 239, 231, 0.7) 12.97%, rgba(183, 111, 81, 0.7) 100%), #131C3B;
+    border-radius: 40px;
+
+    transition: 0.2s ease-in-out;
+}
+
+.repraca a:hover{
+    width: 380px;
+}
+
+.repraca a:hover img{
+    transform: rotate(-6deg);
+    width: 98px;
+    margin-right: -40px;
+    height: auto;
+}
+
+.repraca a img{
+    margin-left: 30px;
+    margin-right: -30px;
+    transition: .2s ease-in-out;
+}
+
+.repraca > img{
+    margin: auto;
+}
+
+
+
 /* Mobile */
 @media screen and (max-width: 760px) {
     .aq-head{
@@ -229,6 +313,37 @@ footer section > div{
         transform: rotate(0deg);
     }
 
+    /* repraca */
+    .repraca{
+        width: 100%;
+        padding: 60px 30px;
+        flex-direction: column-reverse;
+    }
+
+    .repraca a{
+        width: 100%;
+        margin: auto;
+    }
+
+    .repraca a:hover{
+        width: 100%;
+    }
+
+    .repraca h2{
+        font-size: 24px;
+    }
+
+    .repraca p{
+        font-size: 20px;
+        line-height: auto;
+    }
+
+    .repraca > img{
+        margin-bottom: 40px;
+        width: 50%;
+    }
+
+    /* rodapé */
     .termos-legais{
         width: 90%;
         margin-left: auto;
