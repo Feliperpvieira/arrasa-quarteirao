@@ -133,12 +133,6 @@ body{
     margin-top: 2rem;
 }
 
-.github{
-    text-align: center;
-    padding-bottom: 3rem;
-    margin-top: 3rem;
-}
-
 /* Footer */
 footer{
     margin-top: 3rem;
@@ -166,6 +160,14 @@ footer section > div{
 }
 
 .contato a{
+    color: black;
+}
+
+.github{
+    padding-top: 10px;
+}
+
+.github a{
     color: black;
 }
 
