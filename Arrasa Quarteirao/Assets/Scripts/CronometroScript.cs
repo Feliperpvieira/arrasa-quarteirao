@@ -54,7 +54,7 @@ public class CronometroScript : MonoBehaviour
         codigoMundoFase = codigoMundo + codigoFase;
         Debug.Log(codigoMundoFase);  
 
-        Time.timeScale = 1f;
+        //Time.timeScale = 1f;
         QuantidadeEstrelas = 3;
         maximum = totalTime; // Iguala o maximum (usado na barra de progresso) ao tempo total, mantendo apenas 1 variavel a ser definida no Unity
         TimeTresEstrelas = totalTime - ((totalTime * 45) / 100); //Calcula o tempo que tem para ganhar 3 estrelas (45%)
