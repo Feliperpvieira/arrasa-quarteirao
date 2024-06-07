@@ -44195,7 +44195,7 @@ PrefabInstance:
     - target: {fileID: 1680675640892723272, guid: 3442e2b37c623c747ac477a6958db485,
         type: 3}
       propertyPath: scoreVitoria
-      value: 650
+      value: 500
       objectReference: {fileID: 0}
     - target: {fileID: 1680675640892723274, guid: 3442e2b37c623c747ac477a6958db485,
         type: 3}
@@ -44205,7 +44205,7 @@ PrefabInstance:
     - target: {fileID: 1680675640892723274, guid: 3442e2b37c623c747ac477a6958db485,
         type: 3}
       propertyPath: totalTime
-      value: 120
+      value: 130
       objectReference: {fileID: 0}
     - target: {fileID: 1680675640892723274, guid: 3442e2b37c623c747ac477a6958db485,
         type: 3}
