@@ -44390,6 +44390,11 @@ PrefabInstance:
       propertyPath: cronometroScript
       value: 
       objectReference: {fileID: 1865451621}
+    - target: {fileID: 5200071515478831895, guid: a7738b2a2776872418f443e6fb2b09a7,
+        type: 3}
+      propertyPath: m_Speed
+      value: 7.7
+      objectReference: {fileID: 0}
     - target: {fileID: 5200071515478831899, guid: a7738b2a2776872418f443e6fb2b09a7,
         type: 3}
       propertyPath: m_Name
