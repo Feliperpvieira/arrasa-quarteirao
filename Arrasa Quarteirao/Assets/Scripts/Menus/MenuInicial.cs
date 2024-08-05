@@ -18,6 +18,8 @@ public class MenuInicial : MonoBehaviour
         //totalEstrelasText.text = "Fase 0: " + PlayerPrefs.GetInt("W1L0", 0).ToString() + ", Fase 1: " + PlayerPrefs.GetInt("W1L1", 0).ToString() + " || Fase atual: " + PlayerPrefs.GetInt("levelAtual-W1").ToString();
         
         txtNumeroEstrelas.text = LevelSelector.totalEstrelasMundo.ToString(); //Não funciona direito pq depende do LevelSelector já ter rodado na scene seguinte, corrigir no futuro
+
+        SoundFXManager.instance.PlayBGMusic();
     }
 
     // Update is called once per frame

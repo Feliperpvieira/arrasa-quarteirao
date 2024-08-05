@@ -113,3 +113,4 @@ MonoBehaviour:
   bonusQuarteiraoScore: 50
   txtBonusPrefab: {fileID: 7614076650050460722, guid: 14e77a088b0c3d545aed54f4598360bd,
     type: 3}
+  destroyedBlockFX: {fileID: 8300000, guid: e620ce3c4290549529d5111b692a3591, type: 3}

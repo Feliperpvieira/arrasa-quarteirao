@@ -19,6 +19,8 @@ public class PrediosScript : MonoBehaviour
     public GameObject particulasColisao;
     public GameObject particulasDestruicao;
     public GameObject txtPontuacaoPrefab;
+    public AudioClip damageSoundFX;
+    public AudioClip demolitionSoundFX;
     public float alturaTextoPontos; //altura em que o texto vai aparecer na cena
 
     // Start is called before the first frame update
@@ -32,6 +34,7 @@ public class PrediosScript : MonoBehaviour
     {
         currentHealth -= damageIntensity;
         Instantiate(particulasColisao, transform.position, Quaternion.identity);
+        SoundFXManager.instance.PlaySoundFXClip(damageSoundFX, transform, 1f);
         pontosGanhos = 1;
 
         if (!alive) //Checa se o prédio está vivo. Se não, nada acontece. A exclamação antes de alive significa "se não está alive".
@@ -49,6 +52,7 @@ public class PrediosScript : MonoBehaviour
             Pontuacao.score = Pontuacao.score + bonusScore;
             pontosGanhos = bonusScore;
             Instantiate(particulasDestruicao, transform.position, Quaternion.identity);
+            SoundFXManager.instance.PlaySoundFXClip(demolitionSoundFX, transform, 1f); //play destruction sfx
             Replace(inicialState, destroyed);
         }
 

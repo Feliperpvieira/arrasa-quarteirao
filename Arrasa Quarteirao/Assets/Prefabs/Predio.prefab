@@ -155,6 +155,8 @@ MonoBehaviour:
     type: 3}
   txtPontuacaoPrefab: {fileID: 7614076650050460722, guid: c6aa50762fbed4608ba5c60e4982d280,
     type: 3}
+  damageSoundFX: {fileID: 8300000, guid: 3827476ebe5214c5c98bd362727bd643, type: 3}
+  demolitionSoundFX: {fileID: 8300000, guid: b2701dd18b5b544b387c06ee3c084391, type: 3}
   alturaTextoPontos: 6
 --- !u!1001 &95728230487795855
 PrefabInstance:

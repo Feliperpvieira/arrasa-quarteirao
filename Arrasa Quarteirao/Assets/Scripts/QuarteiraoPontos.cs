@@ -7,6 +7,7 @@ public class QuarteiraoPontos : MonoBehaviour
 {
     public int bonusQuarteiraoScore;
     public GameObject txtBonusPrefab;
+    public AudioClip destroyedBlockFX;
 
     // Update is called once per frame
     void Update()
@@ -14,6 +15,7 @@ public class QuarteiraoPontos : MonoBehaviour
         if (transform.childCount == 0)
         {
             Pontuacao.score = Pontuacao.score + bonusQuarteiraoScore;
+            SoundFXManager.instance.PlaySoundFXClip(destroyedBlockFX, transform, 1f);
             ShowPontosBonus();
             enabled = false;
         }
